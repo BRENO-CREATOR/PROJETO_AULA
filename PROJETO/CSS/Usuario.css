@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #67a8cd;
+    color: #357599;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#titulo{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: #295872;
+    text-align: center;
+}
+
+.normal{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+fieldset{
+    background-color: #D3E6F1;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    border-color: #295872;
+    box-shadow: #111111;
+}
+.campo{
+    margin-left: 10%;
+    margin-right: -10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 1en;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.campo input, select{
+    background-color: #8dbeda;
+    border-radius: 5px;
+    border-color: #295872;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    display: block;
+    width: 300px;
+    height: 20px;
+}
+
+.campo input:focus, select:focus{
+    background: #FFFFFF;
+    border-color: #295872;
+}
+
+.obs{
+    font-size: 10px;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #295872;
+    color: #D3E6F1;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 90%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background: #D3E6F1;
+    color: #295872;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+
+

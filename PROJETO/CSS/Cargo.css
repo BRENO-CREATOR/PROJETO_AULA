@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FF758F;
+    color: #A50021;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: #A50021;
+    text-align: center;
+}
+
+.normal{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    border-color: #A50021;
+    background-color: #FFAFBE;
+    box-shadow: 5px 5px 5px #A50021;
+}
+
+.campo{
+    margin-left: 10%;
+    margin-right: -10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 1en;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.campo input[type="text"]{
+    background-color: #FFD5DD;
+    border-radius: 5px;
+    border-color: #FF758F;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    display: block;
+    width: 300px;
+    height: 20px;
+}
+
+.campo input:focus{
+    background: #FFAFBE;
+    border-color: #A50021;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #A50021;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background: #FFAFBE;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
