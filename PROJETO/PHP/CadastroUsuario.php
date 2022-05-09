@@ -19,10 +19,10 @@
 
 <?php
 
-    $nome = $_POST['name'];
+    $nome = filter_input(INPUT_POST,'name');
     $cargo = $_POST['cargo'];
-    $rg = $_POST['rg'];
-    $dt = $_POST['dt'];
+    $rg = filter_input(INPUT_POST,'rg');
+    $dt = filter_input(INPUT_POST,'dt');
 
     $usuario = new Usuario();
 
@@ -34,9 +34,9 @@
     $dao = new DAOUsuario();
     
     if($dao->insert($usuario)){
-        echo 'Cargo salvo com sucesso!';
+        echo 'Usuário salvo com sucesso!';
     } else {
-        echo 'Cargo com problema!';
+        echo 'Usuário com problema!';
     }
 
 ?>

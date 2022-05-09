@@ -19,7 +19,7 @@
 
 <?php
 
-    $nome = $_POST['cargo'];
+    $nome = filter_input(INPUT_POST, 'cargo');
 
     $cargo = new Cargo();
 

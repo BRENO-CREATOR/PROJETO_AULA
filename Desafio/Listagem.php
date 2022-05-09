@@ -4,9 +4,9 @@
 <?php
     define ('_BASE', $_SERVER['DOCUMENT_ROOT'] . '/dew_1_2021.2/');
 
-    require_once '../MODELO/Tipo.php';
-    require_once '../DAO/CONEXAO.php';
-    require_once '../DAO/DAOTipo.php';
+    require_once './Desafio.php';
+    require_once './CONEXAO.php';
+    require_once './DAODesafio.php';
 ?>
 
 <head>
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <h2>Listagem de Tipos</h2>
+    <h2>Listagem de Nomes</h2>
     <table border="1">
         <tr>
             <th>Código</th>
@@ -28,7 +28,7 @@
 
             //Teste de listagem
 
-            $DC = new DAOTipo();
+            $DC = new DAODesafio();
             $lista = $DC->listAll();
 
             echo '<br>';
@@ -43,3 +43,5 @@
         ?>
     </table>
 </body>
+
+</html>
